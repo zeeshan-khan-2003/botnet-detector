@@ -3,7 +3,7 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-*.pkl
+*.pkl       # ignore model pickle files
 *.sqlite3
 
 # Virtual environment
@@ -20,6 +20,9 @@ ml/dataset/*
 ml/retrain_data/*
 !ml/dataset/.gitkeep
 !ml/retrain_data/.gitkeep
+
+# Models
+ml/model/*
 
 # Jupyter
 .ipynb_checkpoints/
