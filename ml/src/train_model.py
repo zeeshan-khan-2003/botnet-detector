@@ -4,7 +4,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, accuracy_score
 from sklearn.utils.class_weight import compute_class_weight
 import numpy as np
-
+import joblib
 # Load dataset
 df = pd.read_csv("/Users/zeeshankhan/Desktop/botnet-detector/ml/dataset/semantic_features.csv")
 
@@ -30,3 +30,9 @@ y_pred = model.predict(X_test)
 # Metrics
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print(classification_report(y_test, y_pred))
+
+
+#Model ko Save krraha hu
+
+joblib.dump(model, "/Users/zeeshankhan/Desktop/botnet-detector/ml/model/bot_detector.pkl")
+print("Random Forest model saved successfully!")
