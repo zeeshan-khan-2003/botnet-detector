@@ -1,0 +1,18 @@
+# Data handling
+pandas
+numpy
+
+# Machine learning
+scikit-learn
+joblib
+
+# API
+fastapi
+uvicorn
+
+# Visualization (optional for debugging/EDA)
+matplotlib
+seaborn
+
+# For sending HTTP requests (simulator to API)
+requests

@@ -1,7 +1,14 @@
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
 *.pkl
+*.sqlite3
+
+# Virtual environment
+venv/
+.env/
 .venv/
 
 # Node.js / frontend
@@ -14,5 +21,8 @@ ml/retrain_data/*
 !ml/dataset/.gitkeep
 !ml/retrain_data/.gitkeep
 
-# macOS system files
+# Jupyter
+.ipynb_checkpoints/
+
+# MacOS
 .DS_Store
