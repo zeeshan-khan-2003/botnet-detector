@@ -33,27 +33,22 @@ This project is designed to detect bot traffic on websites by analyzing web logs
 
 ## Project Structure
 
-botnet-detector/
-│
-├── backend/
-│ └── src/ # FastAPI backend code
-│ └── main.py # API endpoints
-│
-├── frontend/ # Optional dashboard/frontend
-│ └── src/
-│
-├── ml/
-│ ├── dataset/ # Original & parsed datasets
-│ ├── model/ # Trained ML model (.pkl)
-│ ├── retrain_data/ # Live logs for retraining
-│ └── src/ # ML scripts
-│ ├── feature_engineering.py
-│ ├── live_predictor.py
-│ ├── parse_logs.py
-│ └── train_model.py
-│
-└── traffic-simulator/
-└── simulator.py # Generates live traffic
+- **backend/**
+  - **src/** – FastAPI backend code
+    - `main.py` – API endpoints
+- **frontend/** – Optional dashboard/frontend
+  - **src/**
+- **ml/**
+  - **dataset/** – Original & parsed datasets
+  - **model/** – Trained ML model (.pkl)
+  - **retrain_data/** – Live logs for retraining
+  - **src/** – ML scripts
+    - `feature_engineering.py`
+    - `live_predictor.py`
+    - `parse_logs.py`
+    - `train_model.py`
+- **traffic-simulator/**
+  - `simulator.py` – Generates live traffic
 ---
 
 ## Setup & Installation
