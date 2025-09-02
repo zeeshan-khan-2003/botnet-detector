@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pkl
+.venv/
+
+# Node.js / frontend
+node_modules/
+build/
+
+# Datasets & logs
+ml/dataset/*
+ml/retrain_data/*
+!ml/dataset/.gitkeep
+!ml/retrain_data/.gitkeep
+
+# macOS system files
+.DS_Store
